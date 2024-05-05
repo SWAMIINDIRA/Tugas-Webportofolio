@@ -1,0 +1,43 @@
+@media screen and (max-width: 1200px) {
+    #page-nav{
+        display: none;
+    }
+    #ham-nav{
+        display: flex; 
+    }
+    #profile{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    .pic{
+        height: 30rem;
+        width: 30rem;
+    }
+    #project{
+        height: 96vh;
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+    }
+    .text-title{
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+    .title-project-container{
+        margin-top: auto;
+        align-self: center;
+        margin-left: 0%;
+        row-gap: 2rem;
+    }
+    #contact{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        column-gap: 3rem;
+    }
+    .contact-info-upper-container{
+        gap: 3rem;
+    }
+}

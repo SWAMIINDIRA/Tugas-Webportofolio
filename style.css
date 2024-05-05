@@ -1,0 +1,146 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+section{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #FFF6F6;
+}
+
+button{
+    padding: 14px 40px;
+    border-radius: 30px;
+    border: none;
+}
+
+button.start,
+.yn,
+.name{
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: #FFDFDF;
+    transform: translate(-50%, -50%);
+}
+
+section.active .start{
+    display: none;
+}
+
+button.start:hover{
+    background-color:#F875AA;
+    color: #FFFFFF;
+}
+
+section.active .yn{
+    display: none;
+}
+
+span.overlay{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #FFDFDF;
+    opacity: 50%;
+    pointer-events: none;
+}
+
+section.active .overlay{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.yn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    max-height: 200px;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 30px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.yn h1{
+    margin-top: 15px;
+}
+
+.yn h5{
+    margin-top: 3px;
+    margin-bottom: 12px;
+}
+
+button.yes{
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    background: #BACD92;
+    color: #FFFFFF;
+}
+button.no{
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    background: #EFBC9B;
+    color: #FFFFFF;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    max-height: 200px;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 30px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+section.active .name{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.name h1{
+    margin-top: 15px;
+}
+
+.name h5{
+    margin-top: 3px;
+    margin-bottom: 12px;
+}
+
+button.ok{
+    margin-top: 10px;
+    padding: 8px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    background: #BACD92;
+    color: #FFFFFF;
+}
+
+input{
+    height: 1cm;
+    margin-top: 5px;
+    padding: auto;
+    text-align: center;
+    border-radius: 15px;
+    border: #BACD92;
+    color: #BACD92;
+    font-style: italic;
+}

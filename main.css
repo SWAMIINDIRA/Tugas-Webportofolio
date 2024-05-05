@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins";
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav, .logo, .nav-links{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    justify-content: space-around;
+    height: 15vh;
+}
+
+.logo{
+    align-self: center;
+    font-size: 3rem;
+    color: #A87676;
+    text-decoration: dotted;
+}
+
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a{
+    color: #A87676;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover{
+    color: #CA8787;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.logo{
+    cursor: default;
+}
+
+#ham-nav{
+    display: none;
+}
+
+.ham-menu{
+    position: relative;
+    display: inline-block;
+}
+
+.ham-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.ham-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: #A87676;
+    transition: all ease-in-out 0.3s;
+}
+.ham-links{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all ease-in-out 0.3s;
+}
+
+.ham-links a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #F875AA;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.ham-links li{
+    list-style: none;
+}
+
+.ham-links.open{
+    max-height: 300px;
+}
+
+.ham-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.ham-icon.open span:nth-child(2){
+    opacity: 0;
+}
+
+.ham-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.ham-icon span:first-child{
+    transform: none;
+}
+
+.ham-icon span:nth-child(2){
+    opacity: 1;
+}
+
+.ham-icon span:last-child{
+    transform: none;
+}
+
+.ham-icon span:hover{
+    color: #CA8787;
+}
+
+section{
+    padding-top: 2vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    gap: 5rem;
+}
+
+.pic{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.desc{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    align-self: center;
+    gap: 1.5rem;
+}
+
+.desc h1{
+    font-size: larger;
+    font-weight: 700;
+}
+
+.desc p{
+    font-size: medium;
+    font-weight: 600;
+}
+
+.cvBtn{
+    align-items: center;
+}
+
+.download-cv{
+    width: 8rem;
+    height: 3rem;
+    border-radius: 2rem;
+    background-color: white;
+    translate: (-50%, -50%);
+    border: black 0.1rem solid;
+    cursor: pointer;
+}
+
+.download-cv:hover{
+    background-color: #F875AA;
+    color: white;
+    border: #F875AA 0.1rem solid;
+}
+
+.text-title{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+.title{
+    text-align: center;
+    font-size: 3rem;
+    color: #A87676;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+.text-project{
+    text-align: center;
+}
+#project{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.title-container{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    justify-self: center;
+}
+
+.title-project-container{
+    justify-content: center;
+    flex-direction: row;
+    justify-items: space-between;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.title-container, .title-project-container{
+    display: flex;
+    margin-bottom: auto;
+}
+
+.project-container{
+    padding: 2rem;
+    background-color: white;
+    border-radius: 15px;
+    border: #bddaef 0.3rem solid;
+    text-align: center;
+    text-overflow: clip;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+}
+.project-container h3{
+    margin-bottom: 2rem;
+}
+
+.project-container p{
+    align-self: center;
+    margin-bottom: 50%;
+}
+
+.title-container{
+    gap: 4rem;
+    height: 50%;
+    width: 50%;
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 70vh;
+  }
+  
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: #bddaef 0.1rem solid;
+    border-color: #bddaef;
+    background: (250, 250, 250);
+    margin: auto;
+    padding: 0.5rem;
+  }
+  
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+  }
+  
+.contact-info-container p {
+    font-size: larger;
+  }

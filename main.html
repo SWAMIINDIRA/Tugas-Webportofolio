@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="page-nav">
+        <div class="logo">Indira's</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#profile">About Me</a></li>
+                <li><a href="#project">My Project</a></li>
+                <li><a href="#contact">Let's Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="ham-nav">
+        <div class="logo">Indira's</div>
+        <div class="ham-menu" onclick="toggleMenu()">
+            <div class="ham-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="ham-links">
+                <li><a href="#profile" onclick="toggleMenu()">About Me</a></li>
+                <li><a href="#project" onclick="toggleMenu()">My Project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Let's Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="pic">
+            <img src="Mask group.png" alt="profile-pic">
+        </div>
+        <div class="desc">
+            <h2 class="greeting">Hi!</h2>
+            <p class="self-desc">I’m Putu Swami Indira Dewi, final year student of mathematics program study in Institut Teknologi Sepuluh Nopember. Currently doing my final project and independent study in Infinite Learning about Web Development. Passionate with Human Resources, Finance,  and Project Management field. An adaptive person you might search for ^.^! </p>
+            <div class="cvBtn">
+                <button class="download-cv" onclick="window.open('https://drive.google.com/file/d/1l2CvHKc6fzbIlyIepZDRsY6igCWPmYHI/view?usp=sharing')">Indira's CV</button>
+            </div>
+        </div>
+    </section>
+    <section id="project">
+        <div class="text-title">
+            <h1 class="title"> My Project</h1>
+            <p class="text-project">Get to know more about my work</p> 
+        </div>
+        <div class="title-project-container">
+            <div class="title-container">
+                <div class="project-container">
+                    <h3>Presenting</h3>
+                    <p><a href="https://youtu.be/qbzVO536udw?si=R_sh4NfTXofmEMJa">ITS TV Presenter</a></p>
+                </div>
+                <div class="project-container">
+                    <h3>Human Resources</h3>
+                    <p><a href="https://drive.google.com/file/d/1IxqXv3fYJGCcB1k_Y6w_r2JtlssVQdyA/view?usp=sharing">Human Resources Staff</a></p>
+                </div>
+                <div class="project-container">
+                    <h3>Machine Learning</h3>
+                    <p><a href="https://www.kaggle.com/putuswamiindiradewi">Mathematics Student</a></p>
+                </div>
+            </div>
+        </div>       
+    </section>
+    <section id="contact">
+        <div class="text-title">
+            <h1 class="title">Let's Connect</h1>
+            <p class="text-project">Through my sosial media!</p> 
+        </div>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+              <p><a href="mailto:swamiinddw@gmail.com">Gmail</a></p>
+            </div>
+            <div class="contact-info-container">
+              <p><a href="https://www.linkedin.com/in/swami-indira-dewi/">LinkedIn</a></p>
+            </div>
+            <div class="contact-info-container">
+                <p><a href="https://www.instagram.com/indiradewi.id/">Instagram</a></p>
+              </div>
+          </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

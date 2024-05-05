@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Indira's Portofolio</title>
+</head>
+<body>
+    <section>
+        <button class="start">START!</button>
+        <span class="overlay"></span>
+
+        <div class="yn">
+            <h1>WELCOME!</h1>
+            <h5>May i know your name?</h5>
+            <button class="yes">YES</button>
+            <button class="no">NO</button>
+        </div>
+
+        <div class="name">
+            <h1>WELCOME!</h1>
+            <h5>What is your name?</h5>
+            <form>
+                <input type="text" placeholder="Your Name">
+            </form>
+            <button class="ok">Ok!</button>
+        </div>
+    </section>
+
+    <script>
+        const section = document.querySelector("section"),
+            overlay = document.querySelector(".overlay"),
+            startBtn = document.querySelector(".start"),
+            yesBtn = document.querySelector(".yes"),
+            noBtn = document.querySelector(".no"),
+            okBtn = document.querySelector(".ok");
+
+
+        startBtn.addEventListener("click", () => section.classList.add("active"));
+
+        overlay.addEventListener("click", () => section.classList.remove("active"));
+    </script>
+
+</body>
+</html>
